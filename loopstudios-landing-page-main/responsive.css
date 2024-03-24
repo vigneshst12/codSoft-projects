@@ -1,0 +1,471 @@
+@media (max-width: 64em) {
+  .nav-container,
+  .section-about,
+  .creation {
+    padding: 4.5rem 4rem;
+  }
+  footer {
+    padding: 0 4rem;
+  }
+  #header {
+    background-position: 45% 0%;
+  }
+  .section-about {
+    max-width: 95%;
+    padding-right: 0;
+    padding-left: 4rem;
+  }
+  .vr-img {
+    width: 55%;
+  }
+  .about-content-box {
+    width: 55%;
+    padding: 2.5rem;
+    padding-bottom: 1rem;
+    right: 5%;
+    top: 35%;
+  }
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .about-content {
+    font-size: 0.77rem;
+  }
+  .photo-album {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+  }
+  .banner {
+    margin-left: 3.5rem;
+    padding-left: 0.8rem;
+  }
+  .banner-title {
+    max-width: 30.5rem;
+    font-size: 2.95rem;
+    padding-right: 0;
+  }
+  .brandLogo {
+    width: 7rem;
+  }
+  .content-title {
+    font-size: 2.2rem;
+  }
+  .btn {
+    padding: 0.5rem 1.5rem;
+  }
+  .creation {
+    margin-bottom: 4rem;
+  }
+  .img-title {
+    font-size: 1.4rem;
+    transform: translate(23%, -170%);
+  }
+  .logo-list li img {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  .brand-logo {
+    height: 1.4rem;
+  }
+  .info-list.nav-links {
+    gap: 1.2rem;
+  }
+  .copyright {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 50em) {
+  .vr-img {
+    width: 100%;
+  }
+  .sticky #header {
+    margin-top: 0;
+  }
+
+  .section-about {
+    max-width: 50rem;
+    padding: 4rem;
+  }
+  .about-content-box {
+    position: static;
+    width: 100%;
+  }
+  .photo-album {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-title {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  .about-content {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  .creation {
+    margin-top: 1rem;
+  }
+  .img-title {
+    font-size: 1.8rem;
+    transform: translate(28%, -180%);
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+  .nav-container,
+  .section-about,
+  .creation,
+  footer {
+    padding: 4.5rem 2.5rem;
+  }
+  .logos,
+  .info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .info-list.nav-links {
+    flex-direction: column;
+  }
+  footer {
+    padding: 2.5rem 2.5rem;
+  }
+  .brand-logo {
+    height: 2.6rem;
+  }
+  .logo-list li img {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  .album-img {
+    width: 100%;
+  }
+  .info-list .nav-link {
+    font-size: 1.25rem;
+  }
+  .copyright {
+    font-size: 1.1rem;
+  }
+  .banner-title {
+    font-size: 2.6rem;
+    max-width: 27.5rem;
+  }
+  #header {
+    height: 90vh;
+  }
+  .banner {
+    margin-top: 5rem;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .info-list.nav-links {
+    align-self: center;
+    width: 30%;
+  }
+  .logo-list {
+    align-self: center;
+  }
+  .logos {
+    gap: 1.5rem;
+  }
+  .info {
+    gap: 1.5rem;
+  }
+  .banner {
+    margin-top: 0;
+  }
+}
+@media (max-width: 37.5em) {
+  .menu {
+    display: block;
+  }
+
+  #header {
+    position: relative;
+    overflow: hidden;
+    /* overflow-y: auto; */
+  }
+  .nav-open#header {
+    min-height: 100vh;
+    transition: 1s;
+  }
+  #header {
+    transition: 1s;
+  }
+
+  .nav-container nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    padding-left: 2rem;
+    transform: translateX(100%);
+    transition: all 1s;
+    z-index: 999;
+  }
+  .sticky .nav-container nav {
+    position: fixed;
+  }
+
+  .nav-open .nav-container nav {
+    transform: translateX(0%);
+    display: block;
+    transition: all 1s;
+    height: 100vh;
+  }
+  .nav-links {
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .nav-link {
+    width: max-content;
+    font-size: 1.6rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+  .mobile-brandLogo {
+    display: block;
+    z-index: 1;
+    height: 2rem;
+    width: auto;
+    position: absolute;
+    padding-left: 2rem;
+    left: 0;
+    transform: translateX(300%);
+    transition: all 1s;
+    z-index: 9999;
+  }
+  .nav-open .mobile-brandLogo {
+    transform: translate(0);
+  }
+  .nav-open .close-menu {
+    display: block;
+    z-index: 9999;
+  }
+  .nav-open .menu {
+    display: none;
+  }
+  .brandLogo {
+    height: 1.5rem;
+    width: auto;
+  }
+  .banner {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .banner-title {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .about-content-box {
+    padding: 1.5rem;
+  }
+  .about-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .section-about {
+    padding-bottom: 0;
+  }
+  .about-content {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  .top-content {
+    flex-direction: column;
+  }
+  .btn {
+    position: absolute;
+    bottom: 0;
+  }
+  .creation {
+    position: relative;
+  }
+
+  .album-img {
+    width: 100%;
+  }
+  .content-title {
+    font-weight: 300;
+  }
+  .nav-links {
+    margin-top: 0;
+  }
+  .img-title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 29em) {
+  .sticky .nav-container {
+    position: fixed;
+    z-index: 99999999;
+    top: -6%;
+    bottom: 0;
+    height: 5rem;
+    box-shadow: 0 1rem 2.8rem rgba(0, 0, 0, 0.03);
+    width: 100%;
+    background-color: #000;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav-container,
+  .section-about,
+  .creation {
+    padding: 4.5rem 1.5rem;
+  }
+  .photo-album {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  footer {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .section-about {
+    padding-bottom: 0;
+  }
+  #header {
+    background: url("images/mobile/image-hero.jpg") #0006 no-repeat;
+    /* background-position: 10% 0%; */
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 95vh;
+  }
+  .banner {
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-right: 2rem;
+  }
+  .banner-title {
+    font-size: 2.6rem;
+    padding: 1rem;
+  }
+  .album-img-mobile {
+    display: block;
+    max-width: 100%;
+    filter: brightness(75%) contrast(110%);
+    background-size: cover;
+  }
+
+  .photo-album {
+    gap: 1.5rem;
+  }
+  .album-img {
+    display: none;
+  }
+  .album-img-mobile:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: opacity(30%);
+  }
+  .album-img-mobile:hover ~ .img-title {
+    color: #000;
+  }
+  .img-title {
+    font-size: 2rem;
+    transform: translate(18%, -130%);
+  }
+  .nav-container {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 23.5em) {
+  .banner {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    padding-right: 2rem;
+    padding-left: 0;
+    max-width: 20.5rem;
+  }
+  .banner-title {
+    font-size: 1.95rem;
+    padding: 1rem;
+  }
+  .img-title {
+    font-size: 1.6rem;
+    transform: translate(18%, -130%);
+  }
+  .about-title {
+    font-size: 1.6rem;
+  }
+  .content-title {
+    font-size: 1.6rem;
+  }
+  .about-content {
+    font-size: 0.7rem;
+  }
+  .brand-logo {
+    height: 1.8rem;
+    width: auto;
+  }
+  .info-list.nav-links {
+    width: 50%;
+  }
+  .nav-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .logo-list li img {
+    height: 1.5rem;
+    width: auto;
+  }
+  .copyright {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 18em) {
+  .banner-title {
+    font-size: 1.3rem;
+  }
+  .brandLogo {
+    height: 1rem;
+    width: auto;
+  }
+  .img-title {
+    font-size: 1.2rem;
+  }
+  .mobile-brandLogo {
+    height: 1.5rem;
+    width: auto;
+  }
+  .about-title {
+    font-size: 0.8rem;
+  }
+  .about-content {
+    font-size: 0.4rem;
+    padding: 0;
+  }
+  .content-title {
+    font-size: 1rem;
+  }
+  .creation {
+    padding-top: 0;
+  }
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.5rem;
+  }
+  .brand-logo {
+    height: 1.5rem;
+    width: auto;
+  }
+  .info-list .nav-link {
+    font-size: 1rem;
+  }
+  .logo-list li img {
+    height: 1rem;
+    width: auto;
+  }
+  .copyright {
+    font-size: 0.6rem;
+  }
+}
